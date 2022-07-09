@@ -1,12 +1,4 @@
-/// Block Element
-@mixin element($element)
-  &__#{$element}
-    @content
-
-/// Block Modifier
-@mixin modifier($modifier)
-  &--#{$modifier}
-    @content
+@import '../../App.sass'
 
 .nav
   background: white
@@ -24,7 +16,7 @@
     margin: 5px 0
 
   @include element('loginBtn')
-    background: #b6a6f3
+    background: $purple
     border-radius: 3px
     border: 0
     padding: 10px
